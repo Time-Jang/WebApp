@@ -1,0 +1,60 @@
+body{
+  background-color: #1D2475;
+  color : #939396;
+  font-family : Helvetica, Verdana, sans-serif;
+  background-image: url("http://www.psdgraphics.com/file/empty-gold-coin-icon.jpg");
+  background-size: 120px 100px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+h1{
+  font-size : 40pt;
+  text-shadow : 3px -3px green;
+}
+h1,h2{
+  color : #F7931E;
+}
+strong,dt{
+  color : #FFF86B;
+}
+dt{
+  font-weight: bold;
+}
+a{
+  color : #FF4F4F;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+dl{
+  font-size : 70%;
+}
+p::first-letter{
+  font-weight: bold;
+  font-size: 150%;
+}
+blockquote{
+  color: #D1DFEB;
+}
+li,blockquote{
+  text-align: left;
+}
+table,td,tr,th{
+  border: 2px dotted #939396;
+}
+table{
+  border-collapse: collapse;
+}
+ul{
+  list-style: square;
+}
+img{
+  outline-style: ridge;
+  outline-color: #F7931E;
+  outline-width: medium;
+}
+.val{
+  outline: none;
+}
