@@ -52,7 +52,7 @@ img{
   float: right;
 }
 */
-.blue{
+section{
 	border: 4px solid #1D2475;
   border-width: thick;
   background-color: #99CCFF;
@@ -66,13 +66,13 @@ img{
 	margin-left: 180px;
 }
 
-#green{
+article{
 	border: 10px solid white;
   border-width: thick;
   background-color: white;
 }
 
-#red{
+header{
 	/*
   border: 5px solid red;
   border-width: thick;
@@ -82,7 +82,7 @@ img{
   color: white;
 }
 
-#orange{
+header h2{
   /*
 	border: 5px solid orange;
   border-width: thick;
@@ -108,7 +108,7 @@ img{
   float: right;
 }
 
-#sidebar{
+aside{
   border: 10px solid #1D2475;
   border-width: thick;
   float: left;
@@ -124,6 +124,6 @@ img{
 a > img{
 	float: left;
 }
-div div *:hover{
+header *:hover,aside *:hover,article section *:hover{
 	background-color: #A6CE39;
 }
