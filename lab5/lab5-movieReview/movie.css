@@ -1,0 +1,103 @@
+body{
+  background-image: url("background.png");
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+#banner{
+  width: 102%;
+  height: 50px;
+  background-image: url("bannerbg.png");
+  background-repeat: repeat-x;
+  text-align: center;
+  position: relative;   /*  at the top of the page */
+  top: -8px;
+  left: -8px;
+}
+h1{
+  text-align: center;
+  font-size: 24pt;
+  font-weight: bold;
+  text-shadow: 3px 3px #999999;
+}
+#overall{
+  width: 800px;
+  height: 1100px;
+  margin: auto;
+  border: 4px gray solid;
+  border-radius: 20px;
+  overflow: hidden; /* ? */
+}
+#overall_left_top{
+  width: 550px;
+  background-image: url("rbg.png");
+  background-size: 100% 83px;
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+}
+#overall_left_top > img{
+  height: 83px;
+  vertical-align: bottom;
+}
+.review_critic{
+  width: 258.5px;
+  float: left;
+}
+.reviews{
+  padding: 2%;
+  margin: 2%;
+  font-size: 8pt;
+  font-weight: bold;
+  border: 2px gray solid;
+  border-radius: 10px;
+  background-color: #E8DC9B;
+  overflow: hidden;
+}
+.reviews > q{
+  margin: 8px;
+}
+.reviews img{
+  padding-right: 5px;
+  float: left;
+}
+.critic{
+  margin-bottom: 20pt;
+  font-style: italic;
+}
+.critic > img{
+  float: left;
+  padding-right: 5px;
+}
+#overview{
+  width: 250px;
+  background-color: #A2B964;
+  font-size: 8pt;
+  font-family: Arial,sans-serif;
+  float: right;
+}
+#overview dt{
+  font-weight: bold;
+}
+#overview dd{
+  padding-bottom: 10pt;
+}
+#overview ul{
+  list-style: none;
+  padding-left: 0%;
+}
+#overview dl{
+  padding: 10pt;
+}
+.bottom{
+  width: 800px;
+  background-color: #A2B964;
+  margin-top: 124.7%;
+  text-align:center;
+}
+.bottom p{
+  padding: 5px;
+}
+.validator{
+  float: right;
+  opacity: 0.50;
+}
