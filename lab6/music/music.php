@@ -4,8 +4,8 @@
 	<head>
 		<title>Music Library</title>
 		<meta charset="utf-8" />
-		<link href="http://selab.hanyang.ac.kr/courses/cse326/2013/labs/images/5/music.jpg" type="image/jpeg" rel="shortcut icon" />
-		<link href="http://selab.hanyang.ac.kr/courses/cse326/2013/labs/labResources/music.css" type="text/css" rel="stylesheet" />
+		<link href="http://selab.hanyang.ac.kr/courses/cse326/2016/labs/images/5/music.jpg" type="image/jpeg" rel="shortcut icon" />
+		<link href="http://selab.hanyang.ac.kr/courses/cse326/2016/labs/labResources/music.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -66,7 +66,7 @@
 						return 1;
 					return 0;
 				}
-				$array_mp3_playlist = glob("lab5/musicPHP/songs/*.mp3");
+				$array_mp3_playlist = glob("lab6/musicPHP/songs/*.mp3");
 				usort($array_mp3_playlist, "cmp_size");
 				foreach ($array_mp3_playlist as $mp3_playlist)
 				{
@@ -77,7 +77,7 @@
 				?>
 				<!-- Exercise 8: Playlists (Files) -->
 				<?php
-				$array_m3u_file = glob("lab5/musicPHP/songs/*.m3u");
+				$array_m3u_file = glob("lab6/musicPHP/songs/*.m3u");
 				rsort($array_m3u_file);
 				foreach ($array_m3u_file as $m3u_file)
 				{
@@ -97,10 +97,10 @@
 
 		<div>
 			<a href="http://validator.w3.org/check/referer">
-				<img src="http://selab.hanyang.ac.kr/courses/cse326/2013/labs/images/w3c-html.png" alt="Valid HTML5" />
+				<img src="http://selab.hanyang.ac.kr/courses/cse326/2016/labs/images/w3c-html.png" alt="Valid HTML5" />
 			</a>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
-				<img src="http://selab.hanyang.ac.kr/courses/cse326/2013/labs/images/w3c-css.png" alt="Valid CSS" />
+				<img src="http://selab.hanyang.ac.kr/courses/cse326/2016/labs/images/w3c-css.png" alt="Valid CSS" />
 			</a>
 		</div>
 	</body>
