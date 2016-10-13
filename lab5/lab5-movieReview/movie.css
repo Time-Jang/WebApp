@@ -21,7 +21,7 @@ h1{
 }
 #overall{
   width: 800px;
-  height: 1100px;
+  height: 1025px;
   margin: auto;
   border: 4px gray solid;
   border-radius: 20px;
@@ -37,15 +37,15 @@ h1{
 }
 #overall_left_top > img{
   height: 83px;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 .review_critic{
-  width: 258.5px;
+  width: 270px;
   float: left;
 }
 .reviews{
   padding: 2%;
-  margin: 2%;
+  margin-left: 4%;
   font-size: 8pt;
   font-weight: bold;
   border: 2px gray solid;
@@ -61,8 +61,10 @@ h1{
   float: left;
 }
 .critic{
+  padding-bottom: 15px;
   margin-bottom: 20pt;
   font-style: italic;
+  margin-left: 4%;
 }
 .critic > img{
   float: left;
@@ -74,6 +76,7 @@ h1{
   font-size: 8pt;
   font-family: Arial,sans-serif;
   float: right;
+  height: 1005px;
 }
 #overview dt{
   font-weight: bold;
@@ -87,17 +90,20 @@ h1{
 }
 #overview dl{
   padding: 10pt;
+  padding-top: 0pt;
 }
 .bottom{
   width: 800px;
   background-color: #A2B964;
-  margin-top: 124.7%;
+  margin-top: 115%;
   text-align:center;
 }
 .bottom p{
   padding: 5px;
 }
 .validator{
-  float: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   opacity: 0.50;
 }

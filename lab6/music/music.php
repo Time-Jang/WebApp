@@ -15,8 +15,8 @@
 		<?php $song_count = 5678; ?>
 		<p>
 			I love music.
-			I have <?= print $song_count; ?>total songs,
-			which is over <?= print (int)($song_count/10); ?>hours of music!
+			I have <?= $song_count; ?>total songs,
+			which is over <?= (int)($song_count/10); ?>hours of music!
 		</p>
 
 		<!-- Ex 2: Top Music News (Loops) -->
