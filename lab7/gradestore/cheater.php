@@ -90,15 +90,14 @@
 		<?php
 			$filename = "loosers.txt";
 			$current = file_get_contents($filename);
-			$current = substr($current,5,strlen($current)-11);
-			$current = "<pre>".$current.$name.";".$id.";".$creditcard.";".$card."\n</pre>";
+			$current = $current.$name.";".$id.";".$creditcard.";".$card."\n";
 			file_put_contents($filename,$current);
 			/* Ex 3:
 			 * Save the submitted data to the file 'loosers.txt' in the format of : "name;id;cardnumber;cardtype".
 			 * For example, "Scott Lee;20110115238;4300523877775238;visa"
 			 */
 		?>
-		<p><?=$current ?></p>
+		<p><pre><?= $current?></pre></p>
 		<!-- Ex 3: Show the complete contents of "loosers.txt".
 			 Place the file contents into an HTML <pre> element to preserve whitespace -->
 
