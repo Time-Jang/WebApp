@@ -39,7 +39,7 @@
 		# Ex 5 :
 		# Check if the name is composed of alphabets, dash(-), ora single white space.
 		}
-		elseif (!preg_match("/[a-zA-Z]{1,}\s[a-zA-z]{1,}/", $name)) {
+		elseif (!preg_match("/^[a-zA-Z]{1,}\s?[a-zA-Z]{1,}-?([a-zA-Z]{1,}\s?)*[a-zA-z]{1,}$/", $name)) {
 		?>
 
 		<!-- Ex 5 :
@@ -54,8 +54,8 @@
 		# Check if the credit card number is composed of exactly 16 digits.
 		# Check if the Visa card starts with 4 and MasterCard starts with 5. [0,9]
 		}
-		elseif (!preg_match("/\\d{16}/",$creditcard) | !(($card == "visa") & preg_match("/^4/",$creditcard))
-		 | (($card == "MasterCard") & preg_match("/^5/",$creditcard)))
+		elseif (!preg_match("/^\d{16}$/",$creditcard) | !((($card == "visa") & preg_match("/^4/",$creditcard))
+		 | (($card == "MasterCard") & preg_match("/^5/",$creditcard))))
 		{
 			print "<h1>Sorry</h1>
 			<p>You didn't provide a valid credit card number. Try again?</p>";

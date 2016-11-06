@@ -19,28 +19,31 @@
 
 		<!-- create an HTML Form -->
 		<form action="./cheater.php" method="POST">
-			Name: <input type="text" size="10" name="name" />
-			ID: <input type="text" size="11" maxlength="11" name="id" />
-			<br />
-			Course:
-			<input type="checkbox" name = "CSE326"/> CSE326
-			<input type="checkbox" name = "CSE107"/> CSE107
-			<input type="checkbox" name = "CSE603"/> CSE603
-			<input type="checkbox" name = "CIN870"/> CIN870
-			<br />
-
-			Grade:
-			<select name="Grade">
-				<option>A+</option>
-				<option>A</option>
-				<option>B+</option>
-				<option>B</option>
-			</select>
-			<br />
-			Credit Card: <input type="text" size="10" maxlength="16" name="creditcard" />
-			<input type = "radio" name="card" value="visa" checked="checked"/> Visa
-			<input type = "radio" name="card" value="MasterCard" /> MasterCard
-			<br />
+			<div>
+				Name: <input type="text" size="17" name="name" />
+				ID: <input type="text" size="17" maxlength="11" name="id" />
+			</div>
+			<div>
+				Course:
+				<input type="checkbox" name = "CSE326"/> CSE326
+				<input type="checkbox" name = "CSE107"/> CSE107
+				<input type="checkbox" name = "CSE603"/> CSE603
+				<input type="checkbox" name = "CIN870"/> CIN870
+			</div>
+			<div>
+				Grade:
+				<select name="Grade">
+					<option>A+</option>
+					<option>A</option>
+					<option>B+</option>
+					<option>B</option>
+				</select>
+			</div>
+			<div>
+				Credit Card: <input type="text" size="10" name="creditcard" />
+				<input type = "radio" name="card" value="visa" checked="checked"/> Visa
+				<input type = "radio" name="card" value="MasterCard" /> MasterCard
+			</div>
 			<div id="submitbutton">
 				<input type="submit" value="I am a giant cheater!" />
 			</div>
