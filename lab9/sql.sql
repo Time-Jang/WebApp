@@ -4,16 +4,19 @@ select  a.first_name, a.last_name from actors a join (select r.actor_id from rol
 
 select  a.first_name, a.last_name from actors a join (select r.actor_id from roles r join movies m on m.id = r.movie_id where name='Kill Bill: Vol. 1') rr on a.id = rr.actor_id join (select r.actor_id from roles r join movies m on m.id = r.movie_id where name='Kill Bill: Vol. 2') rrr on a.id = rrr.actor_id;
 
-select a.first_name, a.last_name
+
+
+select b.count, a.first_name, a.last_name
 from actors a
-join (select actor_id,count(movie_id)
+join (select actor_id,count(movie_id) count
 from roles
-group by movie_id
+group by actor_id
 order by count(movie_id) desc) b
 on a.id = b.actor_id
 limit 7;
 
-select genre
+
+select count(movie_id) count_movie,genre
 from movies_genres
 group by genre
 order by count(movie_id) desc

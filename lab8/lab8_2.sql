@@ -73,7 +73,7 @@ select * from student where student_id like '2007%';
 
 select * from student order by student_id;
 
-select * from student group by major having avg(year) > 3;
+select major from student group by major having avg(year) > 3;
 
 select * from student where major='Business Administration' and student_id like '2007%' limit 2;
 
