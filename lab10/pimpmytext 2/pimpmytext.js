@@ -18,7 +18,6 @@ function Bigger(){
   }
 }
 function Style(){
-  alert("");
   var texts = document.getElementById("textarea01");
   var CheckMe = document.getElementById("Bling");
   if(CheckMe.checked)
@@ -78,3 +77,12 @@ function Malk(){
     document.getElementById("textarea01").value = "Malkovich";
   }
 }
+
+function pageLoad(){
+  document.getElementById("Pimp").onclick=Bigger;
+  document.getElementById("Bling").onchange=Style;
+  document.getElementById("snoop").onclick=Upper;
+  document.getElementById("atin").onclick=Pig;
+  document.getElementById("malk").onclick=Pig;
+}
+window.onload = pageLoad;
