@@ -1,0 +1,3 @@
+0.6 left hangaeul-ro
+1.5 right terminal-parking
+0.1 arrive

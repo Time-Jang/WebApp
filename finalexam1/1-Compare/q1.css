@@ -1,0 +1,30 @@
+body {
+	background-color: white;
+}
+
+.column {
+	float: left;
+	margin-right: 1em;
+}
+
+#comparearea {
+	clear: left;
+}
+
+h2 {
+	margin: 0;
+}
+
+#differences li {
+	font-family: monospace;
+	white-space: pre;
+}
+
+.nodiffs {
+	background-color: #cfc;
+}
+
+.diffs {
+	background-color: #fcc;
+	font-weight: bold;
+}

@@ -1,0 +1,5 @@
+0.6 left hangaeul-ro
+0.1 right yongsin-ro
+0.5 left yonghapark-ro
+0.8 left gwangduk4-ro
+0.3 arrive
